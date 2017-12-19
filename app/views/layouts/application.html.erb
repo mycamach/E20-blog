@@ -46,6 +46,9 @@
 	    </div>
 	  </div>
 	</nav>
+    <% if alert.present? %>
+      <div class="alert"> <%= alert %> </div>
+    <% end %>
     <div class="container">
     	<%= yield %>
     </div>
